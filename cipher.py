@@ -14,4 +14,14 @@ while choice != '-1':
         print (result + "\n\n")
         result = ""
 
-    
+    elif choice == '2':
+        message = input("\nEnter the message you want to decrypt: ")
+
+        for i in range(0, len(message)):
+            result = result + chr(ord(message[i]) + 2)
+        
+        print (result + "\n\n")
+        result = ""
+
+    elif choice != '-1':
+        print("You have entered an invalid choice. Please try again.\n\n")
